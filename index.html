@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="book_list">
+        <!-- header -->
+        <header>
+        <img src="open-book.png" alt="open-book">
+        <h1>My<span>Book</span>List</h1>
+        </header>
+        <div class="book_status">
+            <div class="book_details">
+                <p>Book Added</p>
+            </div>
+        </div>
+
+        <!-- form page -->
+        <form>
+            <label for="">Title</label>
+            <input type="text" name="name" autocomplete="off" id="titleInput">
+            <div class="error">
+                <span>Please Enter the Title Field</span>
+                <i class="fa fa-exclamation-circle"></i>
+            </div>
+            <label for="">Author</label>
+            <input type="text" name="name" autocomplete="off" id="authorInput">
+            <div class="error">
+                <span>Please Enter the Author Field</span>
+                <i class="fa fa-exclamation-circle"></i>
+            </div>
+            <label for="">ISBN#</label>
+            <input type="text" autocomplete="off" name="name" id="isbnInput">
+            <div class="error p15">
+                <span>Please Enter the ISBN# Field</span>
+                <i class="fa fa-exclamation-circle"></i>
+            </div>            
+            <!-- btn -->
+            <button id="btn">Submit</button>                
+        </form>
+
+        <!-- tabel -->
+        <table>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN#</th>
+            <th>Action</th>
+        </table>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
